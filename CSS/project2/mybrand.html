@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            border-color: aqua;
+            
+        }
+        @media screen and (min-width:500){
+            
+        }
+        
+        .container{
+            gap: 5px 10px;
+            background-color: rgb(145, 53, 53);
+            grid-template-columns: auto auto auto ;
+            padding: 10px;
+        }
+        .container > div {
+            background-color:rgb(235, 191, 191);
+            border: 1px solid black;
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            text-align: center;
+        footer {
+            background-color: gray;
+            color: white;
+            padding: 15px;
+            position: relative;
+            width: 100%;
+            bottom: 0%;
+        }
+        .item1 {
+            font-size: medium;
+            border: 10px;
+            width: 300px;
+        }
+        body{
+            background-color: rgb(175, 72, 89);
+        }
+
+        @media screen and (min-width: 800px){
+            body {
+                background-color: rgb(224, 187, 105);
+            }
+        }
+        
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Gold Star </header>
+    <nav>
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li><a href="#">features</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    
+        <h1> Grow Your business</h1>
+        <p>Responsive desgin using flexbox and media queries mode simple and elegent</p>
+        <button>get startet<br>
+        </button>
+      <div class="container" >
+        <div class="item1">Fast <br> <p>speed-optimized for best user exprience</p> </div><br>
+        <div class="item2">Responsive <br><p> Work prefectly on all screen size</p> </div><br>
+        <div class="item3">simple <br> <p> Minimal design clear Focus</p></div><br>
+      </div>
+        <footer>
+            <p>&copy; 2025 Gold Star.All right reserved</p>
+        </footer>
+    
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* here. represents class selector */
+
+
+
+
+
+.center{
+    text-align: center; /* it changes the alignment of the sentence into center*/
+    color: red;
+}
+.abc{
+    text-align: left; /* It changes the aligment of the sentence into left*/
+    color: green;
+}
