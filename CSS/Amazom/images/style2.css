@@ -1,0 +1,70 @@
+body{
+    background-color:rgb(165, 168, 149);
+}
+header{
+    background-color: rgb(182, 133, 120);
+    text-align: center;
+    padding: 20px;
+}
+.search-bar{
+    margin-top: 10px;
+}
+.search-bar input{
+    padding: 10px;
+    margin: 250;
+}
+.search-bar button {
+    padding: 8px 12px;
+    background-color: white;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: white;
+    
+  }
+  .product-card {
+    background-color:rgb(163, 104, 55);
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: white;
+  }
+  
+  .product-card .price {
+    font-weight: bold;
+    margin: 10px 0;
+    color: rgb(35, 77, 35);
+  }
+  
+  
+  
+  
+  footer {
+    background-color:rgb(51, 47, 47);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .product-card button {
+    background-color: orange;
+    color:white;
+    padding: 10px;
+    border: none;
+  }
+  .product-card:hover{
+    color: aqua;
+  }
+  .para button:hover{
+    color: aqua;
+  }
+  

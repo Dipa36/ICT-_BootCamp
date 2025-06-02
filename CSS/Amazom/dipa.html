@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="dipa.css">
+  <meta charset="UTF-8" />
+  <title>Amazon Clone</title>
+</head>
+<body><header>
+    <h1>Amazon</h1>
+        <input type="text" placeholder="Search....">
+        <button>search</button>
+        </header>
+</header>
+  </header>
+  <main class="product-container">
+    <div class="product-card">
+      <img src="images2/wirelessHeadphone.jpg" alt="product 1" />
+      <h2>wirelessHeadphone</h2>
+      <p>Nrs.5999</p>
+      <button>Add to card</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images2/Iphone" alt="product 2" />
+      <h2>Iphone</h2>
+      <p>Nrs.1,49,999</p>
+      <button>Add to card</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images2/laptop.jpg" alt="product 3" />
+      <h2>Laptop</h2>
+      <p>Nrs.1,20,999</p>
+      <button>Add to card</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images2/speaker.jpg" alt="product 5" />
+      <h2>Speaker</h2>
+      <p>Nrs.7000</p>
+      <button>Add to card</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Amazon clone . All Right Reserved</p>
+  </footer>
+
+  <script>
+    // Style container
+    const container = document.querySelector(".product-container");
+    container.style.display = "flex";
+    container.style.flexWrap = "wrap";
+    container.style.justifyContent = "center";
+    container.style.gap = "20px";
+    container.style.padding = "20px";
+    container.style.backgroundColor = "#f9f9f9";
+
+    // Style footer
+    const footer = document.querySelector("footer");
+    footer.style.textAlign = "center";
+    footer.style.padding = "20px";
+    footer.style.backgroundColor = "#eaeaea";
+    footer.style.fontSize = "14px";
+    footer.style.marginTop = "40px";
+
+    // Style product cards
+    const cards = document.querySelectorAll(".product-card");
+    cards.forEach((card) => {
+      card.style.border = "1px solid #ccc";
+      card.style.borderRadius = "10px";
+      card.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+      card.style.width = "220px";
+      card.style.padding = "15px";
+      card.style.backgroundColor = "#fff";
+      card.style.textAlign = "center";
+      card.style.transition = "transform 0.3s ease";
+      card.addEventListener("mouseover", () => {
+        card.style.transform = "scale(1.05)";
+      });
+      card.addEventListener("mouseout", () => {
+        card.style.transform = "scale(1)";
+      });
+    });
+
+    // Style product images
+    const images = document.querySelectorAll(".product-card img");
+    images.forEach((img) => {
+      img.style.width = "100%";
+      img.style.borderRadius = "8px";
+      img.style.marginBottom = "10px";
+    });
+
+    // Style titles
+    const titles = document.querySelectorAll(".product-card h2");
+    titles.forEach((title) => {
+      title.style.fontSize = "18px";
+      title.style.margin = "10px 0";
+      title.style.color = "#333";
+    });
+
+    // Style prices
+    const prices = document.querySelectorAll(".product-card p");
+    prices.forEach((price) => {
+      price.style.fontWeight = "bold";
+      price.style.color = "#007bff";
+    });
+
+    // Style buttons
+    const buttons = document.querySelectorAll(".product-card button");
+    buttons.forEach((btn) => {
+      btn.style.marginTop = "10px";
+      btn.style.padding = "10px";
+      btn.style.width = "100%";
+      btn.style.backgroundColor = "#28a745";
+      btn.style.color = "#fff";
+      btn.style.border = "none";
+      btn.style.borderRadius = "5px";
+      btn.style.cursor = "pointer";
+      btn.addEventListener("mouseover", () => {
+        btn.style.backgroundColor = "#218838";
+      });
+      btn.addEventListener("mouseout", () => {
+        btn.style.backgroundColor = "#28a745";
+      });
+    });
+  </script>
+</body>
+</html>
